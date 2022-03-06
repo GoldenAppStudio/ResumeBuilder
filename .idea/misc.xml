@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bottom_navigation_background.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/button_background.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/card_background.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/circle.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/edittext_background.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24_white.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/layout_background.xml" value="0.371875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/edu_recyclerview_item.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/experience_recyclerview_item.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_edit_resume.xml" value="0.27309782608695654" />
+        <entry key="app/src/main/res/layout/fragment_education.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_experience.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_personal_details.xml" value="0.266304347826087" />
+        <entry key="app/src/main/res/layout/fragment_preview.xml" value="0.2595108695652174" />
+        <entry key="app/src/main/res/layout/fragment_project.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_secondary_details.xml" value="0.266304347826087" />
+        <entry key="app/src/main/res/layout/fragment_share.xml" value="0.27309782608695654" />
+        <entry key="app/src/main/res/layout/fragment_take_pic.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/project_recyclerview_item.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/templates_recyclerview_item.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

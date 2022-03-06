@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Resume Maker</string>
+
+    <string name="share_as_pdf">Share as PDF</string>
+    <string name="choose_templates">Choose Templates</string>
+    <string name="personal_details_fragment">Personal Details</string>
+    <string name="templates_description">Select from templates below to create your resume</string>
+    <string name="available_templates">Available Templates</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

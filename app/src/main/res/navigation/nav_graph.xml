@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pic_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.resume.maker.ui.fragments.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/from_home_to_personal_details"
+            app:destination="@id/personal_details_fragment"
+            app:popUpTo="@id/home_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_fragment"
+        android:name="com.resume.maker.ui.fragments.EditFragment"
+        android:label="edit_fragment"
+        tools:layout="@layout/fragment_edit" />
+
+    <fragment
+        android:id="@+id/share_fragment"
+        android:name="com.resume.maker.ui.fragments.ShareFragment"
+        android:label="share_fragment"
+        tools:layout="@layout/fragment_share" />
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++ -->
+
+    <fragment
+        android:id="@+id/personal_details_fragment"
+        android:name="com.resume.maker.ui.fragments.resume.PersonalDetailsFragment"
+        android:label="personal_details_fragment"
+        tools:layout="@layout/fragment_personal_details">
+
+        <action
+            android:id="@+id/from_personal_details_secondary_details"
+            app:destination="@id/secondary_details_fragment"
+            app:popUpTo="@id/home_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondary_details_fragment"
+        android:name="com.resume.maker.ui.fragments.resume.SecondaryDetailsFragment"
+        android:label="secondary_details_fragment"
+        tools:layout="@layout/fragment_secondary_details">
+
+        <argument
+            app:argType="string"
+            android:name="id" />
+
+        <action
+            android:id="@+id/from_secondary_details_to_experience"
+            app:destination="@id/experience_fragment"
+            app:popUpTo="@id/secondary_details_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/experience_fragment"
+        android:name="com.resume.maker.ui.fragments.resume.ExperienceFragment"
+        android:label="experience_fragment"
+        tools:layout="@layout/fragment_experience">
+
+        <argument
+            app:argType="string"
+            android:name="id" />
+
+        <action
+            android:id="@+id/from_experience_to_project"
+            app:destination="@id/project_fragment" />
+
+        <action
+            android:id="@+id/from_experience_to_secondary_details"
+            app:destination="@id/secondary_details_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/project_fragment"
+        android:name="com.resume.maker.ui.fragments.resume.ProjectFragment"
+        android:label="project_fragment"
+        tools:layout="@layout/fragment_project">
+
+        <argument
+            app:argType="string"
+            android:name="id" />
+
+        <action
+            android:id="@+id/from_project_to_experience"
+            app:destination="@id/experience_fragment" />
+
+        <action
+            android:id="@+id/from_project_to_edu"
+            app:destination="@id/education_fragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/education_fragment"
+        android:name="com.resume.maker.ui.fragments.resume.EducationFragment"
+        android:label="education_fragment"
+        tools:layout="@layout/fragment_education">
+
+        <argument
+            app:argType="string"
+            android:name="id" />
+
+        <action
+            android:id="@+id/from_education_to_project"
+            app:destination="@id/experience_fragment" />
+
+        <action
+            android:id="@+id/from_education_to_pic"
+            app:destination="@id/pic_fragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/pic_fragment"
+        android:name="com.resume.maker.ui.fragments.resume.TakePicFragment"
+        android:label="pic_fragment"
+        tools:layout="@layout/fragment_take_pic">
+
+        <argument
+            app:argType="string"
+            android:name="id" />
+
+        <action
+            android:id="@+id/from_pic_to_education"
+            app:destination="@id/education_fragment" />
+
+        <action
+            android:id="@+id/from_pic_to_preview"
+            app:destination="@id/preview_fragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/preview_fragment"
+        android:name="com.resume.maker.ui.fragments.resume.PreviewFragment"
+        android:label="preview_fragment"
+        tools:layout="@layout/fragment_preview">
+
+        <argument
+            app:argType="string"
+            android:name="id" />
+
+        <action
+            android:id="@+id/from_preview_to_pic"
+            app:destination="@id/pic_fragment" />
+
+    </fragment>
+
+</navigation>
